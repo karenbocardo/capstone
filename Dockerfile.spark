@@ -1,0 +1,4 @@
+FROM bitnami/spark:latest
+RUN mkdir -p /opt/airflow/data/files/
+RUN chmod o+w /opt/airflow/data/files/
+RUN pip install faker
